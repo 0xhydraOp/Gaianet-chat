@@ -1,5 +1,5 @@
 # Title: GaiaAI Chatbot
-# Created by: Robiul molla
+# Created by: \033[94mRobiul Molla\033[0m
 
 import requests
 import random
@@ -54,7 +54,28 @@ QUESTIONS = [
     "What is cosmic microwave background?",
     "What is a quantum circuit?",
     "What is gene editing?",
-    "What is a singularity in astrophysics?"
+    "What is a singularity in astrophysics?",
+    # Newly added questions
+    "What is the Turing test?",
+    "Explain quantum entanglement in simple terms",
+    "How does photosynthesis work?",
+    "What is blockchain technology?",
+    "What causes aurora borealis?",
+    "What is CRISPR-Cas9?",
+    "Explain the theory of relativity",
+    "What is dark matter?",
+    "How do vaccines work?",
+    "What is machine learning?",
+    "What is the Higgs boson?",
+    "Explain the double-slit experiment",
+    "What is gravitational lensing?",
+    "How does DNA replication work?",
+    "What is the difference between AI and ML?",
+    "What is epigenetic inheritance?",
+    "Explain the concept of entropy",
+    "What are exoplanets?",
+    "How do neural networks learn?",
+    "What is the Riemann Hypothesis?"
 ]
 
 def chat_with_ai(api_key: str, question: str) -> str:
@@ -110,10 +131,8 @@ def run_bot(api_key: str):
                 elapsed = time.time() - start_time
 
                 print(f"Answer to '{question[:50]}...':\n{response}")
-
                 logging.info(f"Received full response in {elapsed:.2f}s")
                 logging.info(f"Response length: {len(response)} characters")
-
                 time.sleep(QUESTION_DELAY)
 
             except Exception as e:
@@ -121,8 +140,8 @@ def run_bot(api_key: str):
                 continue
 
 def main():
-    print("\033[1;32mTitle: GaiaAI Chatbot\033[0m")
-    print("\033[1;32mCreated by: Robiul molla\033[0m")
+    print("\033[94mTitle: GaiaAI Chatbot")
+    print("Created by: Robiul Molla\033[0m")
     api_key = input("Enter your API key: ")
     run_bot(api_key)
 
