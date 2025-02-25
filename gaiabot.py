@@ -18,7 +18,7 @@ logging.basicConfig(
 )
 
 # Configuration
-BASE_URL = "https://celestia.gaia.domains"
+BASE_URL = "https://bullish.gaia.domains"
 MODEL = "qwen2-0.5b-instruct"
 MAX_RETRIES = 100  # Essentially infinite retries
 RETRY_DELAY = 5  # Seconds between retries
